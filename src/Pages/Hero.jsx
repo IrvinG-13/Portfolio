@@ -1,4 +1,4 @@
-
+import fotoPerfil from '../assets/fotoPerfil.jpeg';
 
 export default function Hero(){
     return(
@@ -10,7 +10,7 @@ export default function Hero(){
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis amet, repudiandae veritatis voluptas fugiat exercitationem, expedita magnam cupiditate deserunt laudantium placeat sed nostrum veniam dolorem quidem modi! Aspernatur, exercitationem velit!</p>
             </div>
             <div className="fotoPerfil">
-                <img className="perfil" src="./src/assets/fotoPerfil.jpeg" alt=""></img>
+                <img className="perfil" src={fotoPerfil} alt=""></img>
             </div>
             
         </section>

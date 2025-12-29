@@ -1,5 +1,5 @@
 import FormC from "../Components/UI/FormC";
-
+import lets from '../assets/Lets.webp'
 
 
 export default function Contactame(){
@@ -9,7 +9,7 @@ export default function Contactame(){
             <div className="contactameTitulo">
                 <p className="tituloContactame">Hablemos</p>
                 <p className="parrafoContactame">¿Tienes un proyecto o una idea? Escríbeme.</p>
-                <img className="imgContactame" src="./src/assets/Lets.webp" alt=""></img>
+                <img className="imgContactame" src={lets} alt=""></img>
             </div>
             <FormC/>
         </section>
