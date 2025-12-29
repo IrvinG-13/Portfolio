@@ -1,0 +1,97 @@
+/*----------------------------CONFIGURACION GLOBAL--------------------------*/
+html, body, #root {
+  margin: 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */  
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+}
+
+:root{
+  /*Colores*/
+  --primary: #ffbe01;
+  --secondary: #ca1f3f;
+  --third: #25172e ;
+  --bg: #f4e8e8;
+
+  /*Fuentes*/
+  --font: 'Space Grotesk', system-ui, sans-serif;
+
+  /*Espaciado*/
+  --p-s: 0.5rem;
+  --p-m: 1rem;
+  --p-lg: 1.5rem;
+
+  /*tamanio*/
+  --text-base: 1rem;
+  --text-s: 1.125rem;
+  --text-m: 1.5rem;
+  --text-lg: 2rem; 
+  --text-lgg : 3rem;
+  --text-xl: 5rem;
+}
+
+/*------------------------------------Configuracion de Componentes------------------------*/
+
+#root{ 
+  font-family: var(--font); 
+  color: var(--third); 
+  line-height: 1.6; 
+}
+
+h1{font-size: var(--text-lg);}
+h2{font-size: var(--text-m);}
+h3{font-size: var(--text-s);}
+p{font-size: var(--text-base);}
+
+
+a{color: inherit; position: relative; text-decoration: none;}
+
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 100%;
+  height: 3px;              /* grosor */
+  background-color: white;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
+ul{ list-style: none;}
+
+.section{padding: var(1.5rem); width: 100%;}
+
+.btn{
+  background-color: var(--primary);
+  border: none;
+  font-size: var(--text-s);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover{
+  background-color: var(--third);
+  color: var(--bg);
+  transform: scale(1.03);
+  border: 1px solid;
+  border-color: white;
+}
+
+
+
+
+

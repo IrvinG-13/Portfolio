@@ -1,0 +1,602 @@
+
+@media (max-width: 600px){
+    .navMenu, .navMenu a, .navButton{
+        display: none !important;
+    }
+
+    h1{font-size: 24px;}
+    h2{font-size: 20px;}
+    h3{font-size: 18px;}
+    p{font-size: 14px;}
+
+    /*
+    ================= Mobile Nav Section ==================
+    */
+    /* Mostrar botón */
+    .hamburger {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 2000;
+
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: 2px solid var(--bg);
+
+        background: var(--secondary);
+        color: white;
+        font-size: 26px;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Menú */
+    .mobileNav {
+        display: flex;
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        z-index: 1999;
+
+        background: #332447;
+        border-radius: 16px;
+        padding: 20px;
+
+        flex-direction: column;
+        gap: 15px;
+
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+    }
+
+    .mobileNav.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    /*
+    ================= Sobre Mi Section ==================
+    */
+    .contSobreMi{
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .imgSobreMi{
+        width: 150px !important;
+    }
+
+    .mi, .mi div{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .btnProy{
+        width: 50% !important;
+        padding: 15px !important;
+        font-size: 14px !important;
+    }
+
+    /*
+    ================= Hero Section ==================
+    */
+
+    .hero{
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+        background-image: url(../assets/heroFoto.png) !important;
+        background-size: cover !important;
+        background-position: center  !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .bg{
+        display: none !important;
+    }
+    
+    .tituloHero{
+        font-size: 38px !important;
+        text-align: center !important;
+        color: var(--primary);
+    }
+
+    .details{
+        width: 100%;
+    }
+
+    .details :nth-child(2){
+        margin-left: 15px !important;
+        padding: 40px !important;
+        margin-right: 15px !important;
+        font-size: 16px !important;
+        text-align: justify !important;
+        color: var(--primary);
+    }
+
+    .perfil{
+        width: 150px !important;
+        height: 180px !important;
+        margin-top: 20px;
+    }
+
+    /*
+    ================= Tecnologias Section ==================
+    */
+    .tecnologias{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .tituloTec{
+        transform: rotate(270deg)!important;
+        font-size: 38px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 80%;
+        margin-left: 20px !important;
+    }
+
+    .contSkills {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contSkills h2{
+        font-size: var(--text-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tools{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .tools div p{
+        font-size: 18px !important;
+    }
+
+    .logos{
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    /*
+    ================= Proyectos Section ==================
+    */
+    
+
+    .gridProyectos{
+        display: flex   !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100%;
+    }
+
+    .card{
+        max-width: 90% !important;
+    }
+
+    .card div{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .imgPro{
+        max-width: 90% !important;
+    }
+
+    .cardTitulo{
+        max-width: 90% !important;
+        font-size: 24px;
+    }
+
+    .btnGit, .btnLive{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center;
+        text-align: center;
+        width: 100% !important;
+        padding: 15px !important;
+        font-size: 14px !important;
+    }
+
+    .btnGit a, .btnLive a{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center;
+        text-align: center;
+        gap: 5px !important;
+        font-size: 14px !important;
+    }
+    /*
+    ================= Contactame Section ==================
+    */
+
+    .contactameSection{
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .formContactame{
+        width: 100% !important;
+        margin-bottom: 40px;
+    }
+
+    .input{
+        max-width: 90% !important;
+    }
+
+
+
+    /*
+    ================= Footer Section ==================
+    */
+
+    .footerSection{
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .footerIcons{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    /*
+    ==================Admin===========================
+    */
+    .agregarProyectos{
+        flex-direction: column;
+    }
+
+    .formDash{
+        width: 90% !important;
+    }
+
+    .listaProyectos{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .itemProyecto{
+        max-width: 90% !important;
+        margin-bottom: 20px !important;
+    }
+}
+/*
+    ============================================== Tablet ==================================================
+*/
+@media (min-width: 600px) and (max-width: 960px){
+    .navMenu, .navMenu a, .navButton{
+        display: none !important;
+    }
+
+    h1{font-size: 26px;}
+    h2{font-size: 22px;}
+    h3{font-size: 20px;}
+    p{font-size: 16px;}
+
+    /*
+    ================= Mobile Nav Section ==================
+    */
+    /* Mostrar botón */
+    .hamburger {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 2000;
+
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 2px solid var(--bg);
+
+        background: var(--secondary);
+        color: white;
+        font-size: 32px;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Menú */
+    .mobileNav {
+        display: flex;
+        position: fixed;
+        bottom: 105px;
+        right: 20px;
+        z-index: 1999;
+
+        background: #332447;
+        border-radius: 16px;
+        padding: 26px;
+
+        flex-direction: column;
+        gap: 15px;
+
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+    }
+
+    .mobileNav a{
+        font-size: 22px;
+    }
+
+    .mobileNav.open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+
+    /*
+    ================= Sobre Mi Section ==================
+    */
+    .contSobreMi{
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .imgSobreMi{
+        width: 150px !important;
+    }
+
+    .mi, .mi div{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .btnProy{
+        width: 50% !important;
+        padding: 18px !important;
+        font-size: 20px !important;
+    }
+
+    /*
+    ================= Hero Section ==================
+    */
+
+    .hero{
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+        background-image: url(../assets/heroFoto.png) !important;
+        background-size: cover !important;
+        background-position: center  !important;
+        background-repeat: no-repeat !important;
+        height: auto !important;
+        transition: all 0.3s ease;
+    }
+
+    .bg{
+        display: none !important;
+    }
+    
+    .tituloHero{
+        font-size: 52px !important;
+        text-align: center !important;
+        color: var(--primary);
+    }
+
+    .details{
+        width: 100%;
+    }
+
+
+    .details :nth-child(2){
+        margin-left: 15px !important;
+        padding: 40px !important;
+        margin-right: 15px !important;
+        font-size: 20px !important;
+        text-align: justify !important;
+        color: var(--primary);
+    }
+
+    .perfil{
+        width: 150px !important;
+        height: 180px !important;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+    }
+
+    /*
+    ================= Tecnologias Section ==================
+    */
+    .tecnologias{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .tituloTec{
+        transform: rotate(270deg)!important;
+        font-size: 52px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 80%;
+        margin-left: 20px !important;
+    }
+
+    .contSkills {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contSkills h2{
+        font-size: var(--text-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tools{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .tools div p{
+        font-size: 18px !important;
+    }
+
+    .logos{
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    /*
+    ================= Proyectos Section ==================
+    */
+    
+
+    .gridProyectos{
+        display: flex   !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100%;
+    }
+
+    .card{
+        max-width: 75% !important;
+        height: auto !important;
+    }
+
+    .card div{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .imgPro{
+        max-width: 100% !important;
+    }
+
+    .cardTitulo{
+        max-width: 90% !important;
+        font-size: 24px;
+    }
+
+    .btnGit, .btnLive{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center;
+        text-align: center;
+        width: 100% !important;
+        padding: 15px !important;
+        font-size: 18px !important;
+    }
+
+    .btnGit a, .btnLive a{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center;
+        text-align: center;
+        gap: 5px !important;
+        font-size: 18px !important;
+    }
+
+    /*
+    ================= Contactame Section ==================
+    */
+
+    .contactameSection{
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .formContactame{
+        width: 100% !important;
+        margin-bottom: 40px;
+    }
+
+    .input{
+        max-width: 90% !important;
+    }
+
+    /*
+    ================= Footer Section ==================
+    */
+
+    .footerSection{
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .footerIcons{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    /*
+    ==================Admin===========================
+    */
+    .agregarProyectos{
+        flex-direction: column;
+    }
+
+    .formDash{
+        width: 90% !important;
+    }
+
+    .listaProyectos{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .itemProyecto{
+        max-width: 90% !important;
+        margin-bottom: 20px !important;
+    }
+
+
+}
