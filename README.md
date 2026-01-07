@@ -12,7 +12,6 @@ Incluye una parte pública para visitantes y un panel de administración protegi
 ### Frontend
 - React
 - Vite
-- Tailwind CSS
 - Axios
 - React Router DOM
 
@@ -26,7 +25,7 @@ Incluye una parte pública para visitantes y un panel de administración protegi
 ### Despliegue
 - Frontend: **Vercel**
 - Backend: **Render**
-- Base de datos: **SQL Server (cloud)**
+- Base de datos: **PostgreSQL**
 
 ---
 
