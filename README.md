@@ -3,7 +3,7 @@
 Portafolio web personal desarrollado para mostrar mis proyectos, habilidades y permitir contacto directo.  
 Incluye una parte pública para visitantes y un panel de administración protegido mediante autenticación JWT.
 
-🔗 **Demo:** irvingonzalez.vercel.app  
+🔗 **Demo:** https://irvingonzalez.vercel.app  
 
 ---
 
