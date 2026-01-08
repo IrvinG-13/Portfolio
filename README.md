@@ -1,16 +1,57 @@
-# React + Vite
+# Portfolio Personal – Irvin Gonzalez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portafolio web personal desarrollado para mostrar mis proyectos, habilidades y permitir contacto directo.  
+Incluye una parte pública para visitantes y un panel de administración protegido mediante autenticación JWT.
 
-Currently, two official plugins are available:
+🔗 **Demo:** https://irvingonzalez.vercel.app  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠️ Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React
+- Vite
+- Axios
+- React Router DOM
 
-## Expanding the ESLint configuration
+### Backend
+- ASP.NET Core 8
+- Entity Framework Core
+- SQL Server
+- JWT Authentication
+- Swagger
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Despliegue
+- Frontend: **Vercel**
+- Backend: **Render**
+- Base de datos: **PostgreSQL**
+
+---
+
+## ✨ Funcionalidades
+
+### Público
+- Visualización de proyectos
+- Información personal y tecnologías
+- Formulario de contacto
+
+### Administrador
+- Login con JWT
+- Gestión de proyectos (CRUD)
+- Gestión de mensajes de contacto
+- Rutas protegidas con autorización
+
+---
+
+## 📂 Estructura del proyecto
+
+### Frontend
+```txt
+src/
+ ├─ components/
+ ├─ pages/
+ ├─ services/
+ ├─ hooks/
+ ├─ assets/
+ └─ App.jsx
