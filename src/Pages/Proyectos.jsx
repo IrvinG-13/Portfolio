@@ -7,10 +7,17 @@ export default function Proyectos(){
     const [proyectos, setProyectos] = useState([]);
 
     useEffect(() => {
-        getProyectos()
-        .then((res) => setProyectos(res.data))
-        .catch((err) => console.error(err));
-    },[])
+  getProyectos()
+    .then((res) => {
+      const data = Array.isArray(res.data)
+        ? res.data
+        : res.data?.$values ?? [];
+
+      setProyectos(data);
+    })
+    .catch((err) => console.error(err));
+}, []);
+
 
  return (
     <section id="proyectos" className="proyectos">

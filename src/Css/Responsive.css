@@ -266,6 +266,10 @@
         height: auto !important;
     }
 
+    .emailFooter{
+        font-size: 1.3rem;
+    }
+
     .footerIcons{
         justify-content: center !important;
         align-items: center !important;
@@ -290,6 +294,11 @@
     .itemProyecto{
         max-width: 90% !important;
         margin-bottom: 20px !important;
+    }
+
+    .listaMensajes{
+        display: flex;
+        flex-direction: column;
     }
 }
 /*

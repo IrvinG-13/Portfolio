@@ -25,6 +25,13 @@ export default function DashBoard() {
     demoUrl: "",
     destacado: false,
   });
+  //=========Helper
+  const normalizeArray = (data) => {
+  if (Array.isArray(data)) return data;
+  if (data?.$values) return data.$values;
+  return [];
+  };
+
 
   const handleLogout = ()=>{
     localStorage.removeItem("token");
@@ -35,13 +42,14 @@ export default function DashBoard() {
   // CARGAR PROYECTOS
   // ===============================
   const cargarProyectos = useCallback(async () => {
-    try {
-      const res = await getProyectos();
-      setProyectos(res.data);
-    } catch (err) {
-      console.error(err);
-    }
-  }, []);
+  try {
+    const res = await getProyectos();
+    setProyectos(normalizeArray(res.data));
+  } catch (err) {
+    console.error(err);
+  }
+}, []);
+
 
   // ===============================
   // CARGAR MENSAJES
@@ -49,11 +57,12 @@ export default function DashBoard() {
   const cargarMensajes = useCallback(async () => {
   try {
     const res = await getMensajes();
-    setMensajes(res.data);
+    setMensajes(normalizeArray(res.data));
   } catch (err) {
     console.error(err);
   }
 }, []);
+
 
 
   useEffect(() => {
@@ -68,8 +77,8 @@ export default function DashBoard() {
 
       if (!mounted) return;
 
-      setProyectos(proyRes.data);
-      setMensajes(msgRes.data);
+      setProyectos(normalizeArray(proyRes.data));
+      setMensajes(normalizeArray(msgRes.data));
     } catch (err) {
       console.error(err);
     }
